@@ -1,10 +1,14 @@
 def enumerate_list(lista):
     enumerated_list = []
+    index = 0 
     
-    for i, value in enumerate(lista):
+    for value in lista:
         if value != "":
-            enumerated_list.append(f"{i}. {value}")
+            enumerated_list.append(f"{index}. {value}")
+            index += 1 
+    
     return enumerated_list
+
 
 
 def enumerate_backwards(lista):
